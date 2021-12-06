@@ -1,1 +1,13 @@
 um arquivo qualquer
+
+ssh-keygen -t rsa -f "/c/users/João Pedro Castro" -C "jpcastro14@hotmail.com"
+
+eval "$(ssh-agent -s)"
+
+git init 
+git config --global user.name "jpcastro14"
+git config --global user.email "jpcastro14@hotmail.com"
+git remote add origin "git@github.com:jpcastro14/temp-repo.git"
+git add .
+git commit -m 'mensagem de commit'
+git push origin master
